@@ -6,7 +6,7 @@ public class Lab3_A13{
     
     System.out.println("Enter a number:");
     int x=sc.nextInt();
-    int[] a = new a[x];
+    int[] a = new int[x];
     
     for(int i=0;i<x;i++){
         a[i]=sc.nextInt();
