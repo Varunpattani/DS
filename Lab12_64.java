@@ -1,6 +1,12 @@
 public class Lab12_64{
 	public static void main(String[] args) {
-		
+		Singly s = new Singly();
+		s.insertAtLast(1);
+		s.insertAtLast(2);
+		s.insertAtLast(3);
+		s.insertAtLast(4);
+		s.reverse();
+		s.display();
 	}
 }
 class Singly{
@@ -35,10 +41,15 @@ class Singly{
 		System.out.println();
 	}
 	public void reverse(){
-		if(first == last || first.link == null){			
-			return;
+		Node pre = null;
+		Node current = first;
+		Node next = current.link;
+		while(current!=null){
+			current.link = pre;
+			pre = current;
+			current = next;
+			if(next!=null) next = next.link;
 		}
-		
-
+		first = pre;
 	}
 }
