@@ -18,7 +18,7 @@ public class Lab13_72{
 				num = sc.nextInt();
 				d.insertAtFirst(num);
 				break;
-			
+				
 			case 2:
 				System.out.println("Enter node:");
 				num = sc.nextInt();
@@ -96,12 +96,12 @@ class Doubly{
 			count++;
 		}
 		if(save.rpter!=null){
-		save.lpter.rpter = save.rpter;
-		save.rpter.lpter = save.lpter;
-	    }
-	    else{
-	    	save.lpter.rpter = null;
-	    }
+			save.lpter.rpter = save.rpter;
+			save.rpter.lpter = save.lpter;
+		}
+		else{
+			save.lpter.rpter = null;
+		}
 	}
 	public void display(){
 		System.out.print("Doubly linked List = ");
