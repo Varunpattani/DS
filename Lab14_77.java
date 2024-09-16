@@ -73,7 +73,9 @@ class BST{
                     while(save!=null && save.lpter!=null){
                         save = save.lpter;
                     }
-                    root.info = save.info;
+                    if(save!=null){
+                        root.info = save.info;
+                    }
                     root.rpter = delete(root.rpter, key);
                     return root;
                 }
