@@ -75,8 +75,9 @@ class BST{
                     }
                     if(save!=null){
                         root.info = save.info;
+                        root.rpter = delete(root.rpter, save.info);
                     }
-                    root.rpter = delete(root.rpter, key);
+                   
                     return root;
                 }
             }
